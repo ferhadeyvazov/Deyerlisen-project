@@ -22,6 +22,8 @@
 
   Unique keys generator : Uuid
 
+  Loading : React Spinners
+
   ## Folder structure
   <p>Sass folder structure: https://sass-guidelin.es/#the-7-1-pattern</p>
 
