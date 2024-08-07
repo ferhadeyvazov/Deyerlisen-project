@@ -16,8 +16,13 @@
 
   Form actions : React Hook Form
 
-  CSS : USING SASS and module CSS(SASS) ( not node-sass !)
+  CSS : Using SASS and module CSS(SASS) ( not node-sass !)
 
   Helper Kit : ESlint (can disable)
 
   Unique keys generator : Uuid
+
+  ## Folder structure
+    Sass folder structure: https://sass-guidelin.es/#the-7-1-pattern
+
+    General folder structure: Based on <a href="https://www.instagram.com/olha.codes/" target="_blank">olha.codes</a>
