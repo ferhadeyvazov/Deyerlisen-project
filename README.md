@@ -30,7 +30,7 @@
 
   ## Usage
 
-  This project uses JSON-Server for a mock backend.
+  This project uses Classic Yarn Package Management.
 
   ### Enter Project Folder
 
