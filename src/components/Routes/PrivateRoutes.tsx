@@ -9,9 +9,7 @@ import {
 // PAGES
 import Dashboard from '../../pages/Dashboard'
 
-console.log("Private routes");
-
-const PrivateRoutes = createBrowserRouter(
+const router = createBrowserRouter(
     createRoutesFromElements(
         <Route path='/'>
             <Route index element={<Navigate to={"dashboard"} />} />
@@ -23,9 +21,9 @@ const PrivateRoutes = createBrowserRouter(
     )
 );
 
-// const PrivateRoutes:React.FC = () => {
-//   return <RouterProvider router={router} />
-// }
+const PrivateRoutes:React.FC = () => {
+  return <RouterProvider router={router} />
+}
 
 
 
