@@ -1,30 +1,23 @@
-# React + TypeScript + Vite
+# Technologies
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+  Main technology : React
 
-Currently, two official plugins are available:
+  Superset : TypeScript
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  Compiler : Vite JS (native build)
 
-## Expanding the ESLint configuration
+  State management : Redux Toolkit-Redux Persist
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+  UI Library : Ant Design - (React Bootstrap - less)
 
-- Configure the top-level `parserOptions` property like this:
+  Form Validation : Zod (integrated TS)
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+  Data Fetching : RTK Query (with AxiosBase)
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+  Form actions : React Hook Form
+
+  CSS : USING SASS and module CSS(SASS) ( not node-sass !)
+
+  Helper Kit : ESlint (can disable)
+
+  Unique keys generator : Uuid
