@@ -26,3 +26,20 @@
   <p>Sass folder structure: https://sass-guidelin.es/#the-7-1-pattern</p>
 
   <p>General folder structure: Based on <a href="https://www.instagram.com/olha.codes/" target="_blank">olha.codes</a></p>
+
+
+  ## Usage
+
+  This project uses JSON-Server for a mock backend.
+
+  ### Enter Project Folder
+
+  ```bash
+  cd deyerlisen
+  ```
+
+  ### Install Dependencies
+
+  ```bash
+  yarn install
+  ```
