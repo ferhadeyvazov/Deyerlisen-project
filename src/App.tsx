@@ -1,11 +1,11 @@
 import React from 'react'
-import Loading from './ui/Loading/Loading'
+import Routes from './components/Routes/Routes'
 
 const App: React.FC = () => {
   return (
     <section className="section">
       <div className="container">
-        <Loading />
+        <Routes />
       </div>
     </section>
   )

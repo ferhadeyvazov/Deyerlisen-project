@@ -1,23 +1,22 @@
 import React from 'react'
-import {
-    Route,
-    RouterProvider,
-    createBrowserRouter,
-    createRoutesFromElements
-} from "react-router-dom";
-// PAGES
-import Auth from '../../pages/Auth';
 
-const router = createBrowserRouter(
-    createRoutesFromElements(
-        <Route path='/'>
-            <Route index element={<Auth />} />
-        </Route>
+import RenderIf from '../../utils/RenderIf';
+import PrivateRoutes from './PrivateRoutes';
+import PublicRoutes from './PublicRoutes';
+
+
+const FAKE_AUTH = false;
+
+const Routes: React.FC = () => {
+ return (
+    <>
+       <RenderIf condition={FAKE_AUTH} renderElse={<PublicRoutes />}>
+           <PrivateRoutes />
+       </RenderIf>
+    </>
     )
-);
-
-const Routes:React.FC = () => {
-  return <RouterProvider router={router} />
 }
+
+
 
 export default Routes
