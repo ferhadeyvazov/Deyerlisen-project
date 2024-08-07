@@ -9,19 +9,22 @@ import {
 // PAGES
 import Auth from '../../pages/Auth';
 
+console.log("Public routes");
 
-const router = createBrowserRouter(
+const PublicRoutes = createBrowserRouter(
     createRoutesFromElements(
-        <Route path='/auth'>
-            <Route index element={<Auth />} />
-            <Route path='*' element={<Navigate to={'/auth'} />} />
+        <Route path='/'>
+            <Route index element={<Navigate to={"auth"} />} />
+            <Route path='/auth'>
+                <Route index element={<Auth />} />
+            </Route>
+            <Route path='*' element={<Navigate to={"auth"} />} />
         </Route>
     )
 );
 
-const PublicRoutes: React.FC = () => {
-    console.log("Public routes");
-    return <RouterProvider router={router} />
-}
+// const PublicRoutes: React.FC = () => {
+//     return <RouterProvider router={router} />
+// }
 
 export default PublicRoutes
