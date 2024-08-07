@@ -45,3 +45,7 @@
   ```bash
   yarn install
   ```
+
+  ### Routes
+  We use new React Router v6.4. Routes divides 2 parts: 
+  PublicRoutes, PrivateRoutes
