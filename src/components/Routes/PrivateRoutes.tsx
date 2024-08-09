@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import {
     Navigate,
     Route,
@@ -7,7 +7,7 @@ import {
     createRoutesFromElements
 } from "react-router-dom";
 // PAGES
-import Dashboard from '../../pages/Dashboard'
+import Dashboard from '../../pages/Dashboard';
 
 const router = createBrowserRouter(
     createRoutesFromElements(

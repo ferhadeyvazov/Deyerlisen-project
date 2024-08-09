@@ -1,6 +1,5 @@
-import React from 'react'
-
-import RenderIf from '../../utils/RenderIf';
+import React from 'react';
+import RenderIf from '@utils/RenderIf';
 import PrivateRoutes from './PrivateRoutes';
 import PublicRoutes from './PublicRoutes';
 

@@ -1,18 +1,12 @@
-import react from '@vitejs/plugin-react'
-import { defineConfig } from 'vite'
-import path from 'path'
-
-// https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [react()],
-  server: {
-    port: 3000
-  },
-  resolve: {
-    alias: [
+import path from "path"
+const allPaths = [
       {
         find: '@', 
         replacement: path.resolve(__dirname, './src')
+      },
+      {
+        find: '@utils', 
+        replacement: path.resolve(__dirname, './src/utils')
       },
       {
         find: '@components', 
@@ -29,11 +23,7 @@ export default defineConfig({
       {
         find: '@ui', 
         replacement: path.resolve(__dirname, './src/ui')
-      },
-      {
-        find: '@utils', 
-        replacement: path.resolve(__dirname, './src/utils')
       }
-    ]
-  }
-})
+]
+
+export default allPaths
