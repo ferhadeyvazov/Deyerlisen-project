@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     //Shorten Import Paths
-    // "baseUrl" : "./src",
     "paths": {
       "@/*":["./src/*"],
       "@utils/*":["./src/utils/*"],

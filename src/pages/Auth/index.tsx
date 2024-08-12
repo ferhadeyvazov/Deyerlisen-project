@@ -1,8 +1,11 @@
 import React from 'react'
+import MainLayout from '@layouts/MainLayout'
 
 const Auth:React.FC = () => {
   return (
-    <div>Auth Page</div>
+    <MainLayout>
+      Auth Page
+    </MainLayout>
   )
 }
 

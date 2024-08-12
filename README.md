@@ -27,7 +27,7 @@
   ## Folder structure
   <p>Sass folder structure: https://sass-guidelin.es/#the-7-1-pattern</p>
 
-  <p>General folder structure: Based on <a href="https://www.instagram.com/olha.codes/" target="_blank">olha.codes</a></p>
+  <p>General folder structure: Based on <a href="https://github.com/ahsan-chy/React-JS-Advance-Folder-Structure" target="_blank">React JS Advance-Level Folder Structure</a></p>
 
 
   ## Usage
