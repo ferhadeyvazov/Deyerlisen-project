@@ -1,11 +1,15 @@
 import React from 'react'
-import MainLayout from '@layouts/MainLayout'
+import Hero from '@components/Hero/Hero';
+import Login from '@components/Login/Login'
+import Footer from '@layouts/Footer/Footer'
 
-const Auth:React.FC = () => {
+const Auth: React.FC = () => {
   return (
-    <MainLayout>
-      Auth Page
-    </MainLayout>
+    <>
+      <Hero />
+      <Login />
+      <Footer/>
+    </>
   )
 }
 

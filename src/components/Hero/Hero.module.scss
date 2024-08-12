@@ -1,0 +1,14 @@
+@use "@styles" as *;
+
+.aside{
+    background-image: url(../../assets/img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3rem 1rem;
+    img{
+        max-width: 200px;
+        @include lg {
+            max-width: 25px;
+        }
+    }
+}
