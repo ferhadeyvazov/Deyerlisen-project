@@ -1,10 +1,10 @@
 import React from 'react'
-import { Button } from 'antd'
+import { PButton } from '@ui/Buttons/Buttons'
 
 const Login:React.FC = () => {
   return (
     <div>Login
-          <Button type="primary" size='large'>Sign in</Button>
+          <PButton>Sign in</PButton>
     </div>
   )
 }

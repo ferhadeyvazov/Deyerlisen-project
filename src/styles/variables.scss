@@ -4,3 +4,10 @@ $breakpoints : (
     'lg' : 992px,
     'xl' : 1200px
     );
+    
+// COLORS
+:root{
+    color-scheme: light dark;
+}
+$background: light-dark(#FFFFFF, #000000);
+$default_color: light-dark(#000000, #FFFFFF);

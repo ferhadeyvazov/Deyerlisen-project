@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Logo from '../../assets/img/logo-img.png'
+import Logo from '../../../assets/img/logo-img.png'
 import css from './Hero.module.scss'
 
 const Hero:React.FC = () => {
