@@ -70,3 +70,6 @@
   ```bash
   yarn add zod
   ```
+
+  ### Xülasə
+  Form elementleri Ant Design-dan, onun yoxlanılması, deyerlerin alınması React Hook Form ilə, Form-un doğrulanması(validation) Zod ilə edilib.

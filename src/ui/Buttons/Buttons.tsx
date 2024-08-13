@@ -4,12 +4,14 @@ import { PTheme, LightPTheme } from './Theme'
 
 type IProps = {
   children: React.ReactNode;
+  htmlType?: "submit"|"reset"|"button";
 }
 
-export const PButton: React.FC<IProps> = ({ children }) => {
+export const PButton: React.FC<IProps> = ({ children, htmlType }) => {
+  
   return (
     <ConfigProvider theme={PTheme}>
-      <Button type='primary' size='large'>{children}</Button>
+      <Button htmlType={htmlType} type='primary' size='large'>{children}</Button>
     </ConfigProvider>
   )
 }
