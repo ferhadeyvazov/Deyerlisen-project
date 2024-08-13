@@ -1,22 +1,14 @@
+import { zodResolver } from '@hookform/resolvers/zod'
 import { LightPButton, PButton } from '@ui/Buttons/Buttons'
 import { Input } from 'antd'
 import React from 'react'
 import { Controller, SubmitHandler, useForm } from "react-hook-form"
-import { zodResolver } from '@hookform/resolvers/zod'
-import * as z from 'zod'
 import { IData } from './models'
-
-const schema = z.object({
-  username: z.string().email(),
-  password: z.string().min(10, {message: 'Sifre minimum 10reqemden ibaret olmalidir'})
-})
+import { defaultValue, schema } from './valuesAndSchemas'
 
 const Login: React.FC = () => {
   const { control, formState: { errors }, handleSubmit } = useForm({
-    defaultValues: {
-      username: '',
-      password: ''
-    },
+    defaultValues: defaultValue,
     resolver: zodResolver(schema)
   });
 
