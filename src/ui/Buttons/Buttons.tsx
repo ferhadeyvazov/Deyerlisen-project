@@ -1,6 +1,6 @@
 import React from 'react'
 import { ConfigProvider, Button } from 'antd'
-import { PTheme } from './Theme'
+import { PTheme, LightPTheme } from './Theme'
 
 type IProps = {
   children: React.ReactNode;
@@ -14,10 +14,10 @@ export const PButton: React.FC<IProps> = ({ children }) => {
   )
 }
 
-export const SButton: React.FC<IProps> = ({ children }) => {
+export const LightPButton: React.FC<IProps> = ({ children }) => {
   return (
-    <ConfigProvider>
-      <Button type='primary'>{children}</Button>
+    <ConfigProvider theme={LightPTheme}>
+      <Button size='large'>{children}</Button>
     </ConfigProvider>
   )
 }
