@@ -49,3 +49,24 @@
   ### Routes
   We use new React Router v6.4. Routes divides 2 parts: 
   PublicRoutes, PrivateRoutes
+
+  ### React Hook Form
+  React Hook Form Form elementlerin esasini teşkil edir.
+  
+  ```bash
+  yarn add react-hook-form
+  ```
+
+  ### Zod
+  React Hook Form-da validatorları Zod ilə tuturuq. Zod kullanmak, özellikle karmaşık doğrulama senaryolarında ve TypeScript projelerinde çeşitli avantajlar sunar. React Hook Form'un kendi doğrulama yöntemleri de güçlüdür, ancak Zod gibi bir kütüphane kullanmanın bazı belirgin avantajları vardır:
+
+  ```bash
+  yarn add zod
+  ```
+
+  ### hookform/Resolvers
+  React Hook Form ile Zod arasinda elaqeni yaratmaq ucun Resolvers istifade olunur.
+  
+  ```bash
+  yarn add zod
+  ```
