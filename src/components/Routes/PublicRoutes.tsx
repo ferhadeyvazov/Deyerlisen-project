@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 // PAGES
 import Auth from '../../pages/Auth';
+import ForgetPassword from '@components/Public/ForgetPassword/ForgetPassword';
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -15,6 +16,7 @@ const router = createBrowserRouter(
             <Route index element={<Navigate to={"auth"} />} />
             <Route path='/auth'>
                 <Route index element={<Auth />} />
+                <Route path='forgetPassword' element={<ForgetPassword />} />
             </Route>
             <Route path='*' element={<Navigate to={"auth"} />} />
         </Route>

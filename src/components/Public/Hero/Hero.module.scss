@@ -5,6 +5,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding: 3rem 1rem;
+    @include md {
+        height: 100vh;
+    }
     img{
         max-width: 200px;
         @include lg {

@@ -1,15 +1,12 @@
 import React from 'react'
-import Hero from '@/components/Public/Hero/Hero';
 import Login from '@/components/Public/Login/Login'
-import Footer from '@layouts/Footer/Footer'
+import PublicLayout from '@layouts/PublicLayout';
 
 const Auth: React.FC = () => {
   return (
-    <>
-      <Hero />
+    <PublicLayout>
       <Login />
-      <Footer/>
-    </>
+    </PublicLayout>
   )
 }
 

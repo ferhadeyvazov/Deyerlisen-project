@@ -1,0 +1,21 @@
+@use '../../../styles' as *;
+
+    .login_head{
+        text-align: center;
+        margin-bottom: 1.3rem;
+        h2{
+            font-weight: 500;
+        }
+        h5{
+            font-weight: 500;
+            color: #b5b5c3;
+        }
+    }
+    form{
+        // border: 2px red solid;
+        .forgetPassword{
+            color: #7e8299;
+            font-weight: 400;
+        }
+
+    }
