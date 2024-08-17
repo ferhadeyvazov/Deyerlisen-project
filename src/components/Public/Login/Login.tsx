@@ -29,7 +29,7 @@ const Login: React.FC = () => {
           <Controller
             name='username'
             control={control}
-            render={({ field }) => <Input style={inputStyle} {...field} 
+          render={({ field }) => <Input {...field} style={inputStyle} 
             placeholder="Email and agent number" />}
           />
           {
@@ -38,8 +38,8 @@ const Login: React.FC = () => {
         <Controller
           name='password'
           control={control}
-          render={({ field }) => <Input.Password 
-          style={inputStyle} {...field} 
+          render={({ field }) => <Input.Password {...field} 
+          style={inputStyle} 
           placeholder="Password" />}
         />
         {
