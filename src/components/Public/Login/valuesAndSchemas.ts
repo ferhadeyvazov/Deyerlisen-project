@@ -15,3 +15,5 @@ export const schema = z.object({
   password: password
 })
 .required()
+
+export type Schema = z.infer<typeof schema>

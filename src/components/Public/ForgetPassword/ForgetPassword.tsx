@@ -7,12 +7,12 @@ import { Controller, SubmitHandler, useForm } from "react-hook-form"
 import css from './forgetPassword.module.scss'
 import { Input, Row, Col, Typography } from 'antd'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { schema } from './valuesAndSchemas'
+import { Schema, schema } from './valuesAndSchemas'
 
 const { Text } = Typography;
 
 const ForgetPassword: React.FC = () => {
-  const { control, formState: { errors }, handleSubmit } = useForm({
+  const { control, formState: { errors }, handleSubmit } = useForm<Schema>({
     defaultValues: { username: '' },
     resolver: zodResolver(schema)
   });

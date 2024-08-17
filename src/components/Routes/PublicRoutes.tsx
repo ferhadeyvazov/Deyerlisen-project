@@ -7,8 +7,8 @@ import {
     createRoutesFromElements
 } from "react-router-dom";
 // PAGES
-import Auth from '../../pages/Auth';
-import ForgetPassword from '@components/Public/ForgetPassword/ForgetPassword';
+const Auth = React.lazy(()=> import('@pages/Auth'));
+const ForgetPassword = React.lazy(()=> import('@components/Public/ForgetPassword/ForgetPassword'));
 
 const router = createBrowserRouter(
     createRoutesFromElements(

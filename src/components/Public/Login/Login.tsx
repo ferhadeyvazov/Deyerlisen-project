@@ -3,8 +3,8 @@ import { PButton } from '@ui/Buttons/Buttons'
 import { Input, Row, Col, Typography } from 'antd'
 import React from 'react'
 import { Controller, SubmitHandler, useForm } from "react-hook-form"
-import { IData, inputStyle } from './models'
-import { defaultValue, schema } from './valuesAndSchemas'
+import { IData, inputStyle } from './Types'
+import { defaultValue, schema, Schema } from './valuesAndSchemas'
 import { Link } from 'react-router-dom'
 import css from './Login.module.scss'
 import MainLayout from '@layouts/MainLayout'
@@ -12,7 +12,7 @@ import MainLayout from '@layouts/MainLayout'
 const { Text } = Typography;
 
 const Login: React.FC = () => {
-  const { control, formState: { errors }, handleSubmit } = useForm({
+  const { control, formState: { errors }, handleSubmit } = useForm<Schema>({
     defaultValues: defaultValue,
     resolver: zodResolver(schema)
   });

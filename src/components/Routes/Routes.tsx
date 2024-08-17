@@ -10,14 +10,14 @@ const FAKE_AUTH = false;
 const Routes: React.FC = () => {
     return (
         <>
-            <React.Suspense fallback={<Loading />}>
-                <RenderIf condition={FAKE_AUTH}>
+            <RenderIf condition={FAKE_AUTH}>
+                <React.Suspense fallback={<Loading />}>
                     <PrivateRoutes />
-                </RenderIf>
-                <RenderIf condition={!FAKE_AUTH}>
-                    <PublicRoutes />
-                </RenderIf>
-            </React.Suspense>
+                </React.Suspense>
+            </RenderIf>
+            <RenderIf condition={!FAKE_AUTH}>
+                <PublicRoutes />
+            </RenderIf>
         </>
 
     )
